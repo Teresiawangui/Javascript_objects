@@ -61,7 +61,7 @@ const humans = [
     const highScoringStudents = [];
     
     students.forEach(student => {
-        const sum = student.scores.reduce((acc, score) => acc + score, 0);
+        const sum = student.scores.reduce((acc, score) => acc + score,);
         const average = sum / student.scores.length;
         
         if (average >= 85) {
@@ -79,8 +79,8 @@ const students = [
     { name: 'Jill', scores: [85, 90, 84] },
 ];
 
-const result =highestAverage(students);
-console.log(result);
+
+console.log(highestAverage(students));
 
 //Given an object representing a car, with properties for the make, model, year, and 
 //a method to display the car's information, write a function that takes the car object
